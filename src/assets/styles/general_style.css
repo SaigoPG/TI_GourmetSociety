@@ -1,0 +1,23 @@
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+#navbar {
+
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    padding-left: 188px;
+    padding-right: 188px;
+    background-color: #51BD83;
+
+}
+
+#navLinks {
+
+    display: flex;
+
+}
