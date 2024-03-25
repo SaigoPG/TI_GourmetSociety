@@ -1,23 +1,145 @@
-* {
+*{
 
     padding: 0;
     margin: 0;
 
 }
 
-#navbar {
-
+#navbar
+{
     display: flex;
-    justify-content: center;
-    padding: 4px;
-    padding-left: 188px;
-    padding-right: 188px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 10px 20px;
     background-color: #51BD83;
-
+    color: white;
 }
 
-#navLinks {
-
+#navLinks 
+{
+    list-style: none;
     display: flex;
+    gap: 80px;
+    color: black;
+}
 
+#navLinks li 
+{
+    font-size: 16px;
+}
+
+#buttonContainer 
+{
+    display: flex;
+    gap: 10px;
+}
+
+button 
+{
+    background-color: #30704E;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button img 
+{
+    width: 24px;
+    height: 24px;
+}
+
+button h4 
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#loginButton 
+{
+    color: white;
+}
+
+#cartButton 
+{
+    color: white;
+}
+
+
+/* Estilos para el footer */
+#footer 
+{
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #30704E;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+h1
+{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-info 
+{
+    background-color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer-links
+{
+    background-color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer-legal
+{
+    background-color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+h3 
+{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li 
+{
+    margin-bottom: 5px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilos para los enlaces al pasar el mouse */
+a:hover
+{
+    text-decoration: underline;
 }
