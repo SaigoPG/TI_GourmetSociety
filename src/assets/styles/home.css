@@ -69,3 +69,61 @@
     object-fit: cover;
 
 }
+
+/* Estilos para 3ra parte */
+.fullImage img
+{
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.overlay 
+{
+    position: absolute;
+    top: 240%;
+    left: 60%;
+    color: white;
+    text-align:end;
+    padding: 20px;
+}
+
+.overlay h1 
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.overlay p 
+{
+    font-size: 1rem;
+    justify-content: flex-end;
+}
+/* FIN Estilos para 3ra parte */
+
+
+/* Estilos para 4ta parte - pagina principal*/
+.faq 
+{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+details 
+{
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+}
+
+summary 
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+/* FIN Estilos para 4ta parte */
