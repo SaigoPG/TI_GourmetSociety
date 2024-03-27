@@ -1,0 +1,71 @@
+#firstBanner{
+
+    height: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+    margin-inline:15%;
+    margin-block:1%;
+
+}
+
+.bigTextContainer{
+
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-wrap: wrap;
+    align-self: center;
+
+}
+
+.dynImgContainer{
+
+    flex-grow: 1;
+    border-radius: 10%;
+    flex-basis: 50%;
+    height: 640px;
+    width: 640px;
+    background-color: grey;
+    align-self: center;
+    
+}
+
+#section2{
+    margin-block: 15px;
+    padding-block: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+
+}
+
+.cardShowcase{
+    
+    margin-block: 110px;
+    padding-block: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: stretch;
+    gap: 5px;
+
+}
+
+.cardCover{
+
+    width: 305px;
+    height: 336px;
+    object-fit: cover;
+
+}
