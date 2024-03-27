@@ -1,0 +1,10 @@
+#QuienesSomos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 40px;
+    font-size: 19px;
+}

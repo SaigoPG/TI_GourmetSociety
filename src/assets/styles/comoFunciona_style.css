@@ -1,0 +1,10 @@
+#ComoFunciona
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 80px 280px;
+    gap: 15px;
+}
