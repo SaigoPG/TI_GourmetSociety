@@ -1,10 +1,40 @@
-#ComoFunciona
+.container 
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 80px 280px;
-    gap: 15px;
+    align-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    gap: 25px;
+}
+
+.box 
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #51BD83;
+}
+
+.text
+{
+    flex: 1;
+    padding: 0 20px;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/* Estilos específicos para la imagen */
+.box:nth-child(odd) 
+{
+    flex-direction: row-reverse;
 }
