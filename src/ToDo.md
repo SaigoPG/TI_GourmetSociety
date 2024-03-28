@@ -9,23 +9,23 @@ General:
 
 Páginas:
 
-- [ ] Página principal
+- [ ] Página principal -> Daniel ->Todos
 
-- [ ] Login →Implementar el form y la imagen que lo acompaña
+- [ ] Login →Implementar el form y la imagen que lo acompaña -> Juan
 
-- [ ] Registro →Implementar el form y la imagen que lo acompaña
+- [ ] Registro →Implementar el form y la imagen que lo acompaña  -> Juan
 
-- [ ] Menu → implementar los campos de cada sección de items del menú
+- [ ] Menu → implementar los campos de cada sección de items del menú -> Alejandro
          → implementar los campos de cada item del menu
-
-- [ ] Compras → implementar los platos en el carrito
+ 
+- [ ] Compras → implementar los platos en el carrito -> Julian 
             → implementar la form de método de pago
 
-- [ ] Productos (popup) → implementar campos de imagen y descripción de cada item del menú
+- [ ] Productos Nutricional → implementar campos de imagen y descripción de cada item del menú -> Alejandro
 
-- [ ] PopUp de Cookies
+- [ ] PopUp de Cookies -> Daniel
 
-- [ ] Pagina de info legal →Términos y condiciones
+- [ ] Pagina de info legal →Términos y condiciones -> Juan
                          →Tratamiento de Datos
                          →Contacto legal
 
