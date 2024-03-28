@@ -5,45 +5,45 @@ HTML:
 
 General:
 
-[ ] Linkear todas las páginas entre si
+- [ ] Linkear todas las páginas entre si
 
 Páginas:
 
-[ ] Página principal
+- [ ] Página principal
 
-[ ] Login →Implementar el form y la imagen que lo acompaña
+- [ ] Login →Implementar el form y la imagen que lo acompaña
 
-[ ] Registro →Implementar el form y la imagen que lo acompaña
+- [ ] Registro →Implementar el form y la imagen que lo acompaña
 
-[ ] Menu → implementar los campos de cada sección de items del menú
+- [ ] Menu → implementar los campos de cada sección de items del menú
          → implementar los campos de cada item del menu
 
-[ ] Compras → implementar los platos en el carrito
+- [ ] Compras → implementar los platos en el carrito
             → implementar la form de método de pago
 
-[ ] Productos (popup) → implementar campos de imagen y descripción de cada item del menú
+- [ ] Productos (popup) → implementar campos de imagen y descripción de cada item del menú
 
-[ ] PopUp de Cookies
+- [ ] PopUp de Cookies
 
-[ ] Pagina de info legal →Términos y condiciones
+- [ ] Pagina de info legal →Términos y condiciones
                          →Tratamiento de Datos
                          →Contacto legal
 
 CSS:
 
-[ ] Página principal
+- [ ] Página principal
 
-[ ] Login
+- [ ] Login
 
-[ ] Registro
+- [ ] Registro
 
-[ ] Menu
+- [ ] Menu
 
-[ ] Compras
+- [ ] Compras
 
-[ ] Productos
+- [ ] Productos
 
-[ ] Pop Ups
+- [ ] Pop Ups
 
 JS: TBD
 
