@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="assets/styles/general_style.css">
-        <link rel="stylesheet" href="assets/styles/regStyle.css">
+        <link rel="stylesheet" href="assets/styles/regLogStyle.css">
 
     </head>
 
@@ -38,19 +38,20 @@
         <div class="regLog">
 
             <div class="registerBox">
-                <form>
-
-                    <label for="nUsuario">Usuario</label><br>
-                    <input type="text" id="nUsuario" name="nUsuario">
-                    <label for="nMail">Correo electrónico</label><br>
-                    <input type="text" id="nMail" name="nMail">
-                    <label for="nPass">Contraseña</label><br>
-                    <input type="text" id="nPass" name="nPass">
-                    <label for="nPassConfirm">Confirma el Correo electrónico</label><br>
-                    <input type="text" id="nPassConfirm" name="nPassConfirm">
-                    <label for="nAddress">Dirección</label><br>
+                <form id="regForm">
+                    <h2><strong>Registrarse</strong></h2><br>
+                    <label for="nUsuario">Usuario</label>
+                    <input type="text" id="nUsuario" name="nUsuario"><br>
+                    <label for="nMail">Correo electrónico</label>
+                    <input type="text" id="nMail" name="nMail"><br>
+                    <label for="nPass">Contraseña</label>
+                    <input type="text" id="nPass" name="nPass"><br>
+                    <label for="nPassConfirm">Confirma el Correo electrónico</label>
+                    <input type="text" id="nPassConfirm" name="nPassConfirm"><br>
+                    <label for="nAddress">Dirección</label>
                     <input type="text" id="nAddress" name="nAddress"><br>
-                    <input type="submit" value="Registrarse">
+                    <input type="submit" value="Registrarse"><br>
+                    <a class="swapLink" href="#">¿Ya tienes cuenta? ¡Inicia Sesión!</a>
 
                 </form>                
                 

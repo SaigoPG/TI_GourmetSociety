@@ -1,0 +1,50 @@
+.regLog {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-block: 42px;
+    height: 620px;
+    gap: 20px;
+
+}
+
+.registerBox {
+
+    display: flex;
+    border-radius: 5%;
+    background-color: #d9d9d9;
+    flex-basis: 20%;
+    padding: 20px;
+    height: 70%;
+    align-items: center;
+
+}
+
+.imgContainer {
+
+
+    border-radius: 5%;
+    background-color: #d9d9d9;
+    padding: 20px;
+    flex-basis: 20%;
+    height: 70%;
+}
+
+#regForm{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    width: 100%;
+
+}
+
+.swapLink{
+
+    align-self: center;
+
+}
+
