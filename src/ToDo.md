@@ -11,9 +11,9 @@ Páginas:
 
 - [ ] Página principal -> Daniel ->Todos
 
-- [ ] Login →Implementar el form y la imagen que lo acompaña -> Juan
+- [x] Login →Implementar el form y la imagen que lo acompaña -> Juan
 
-- [ ] Registro →Implementar el form y la imagen que lo acompaña  -> Juan
+- [x] Registro →Implementar el form y la imagen que lo acompaña  -> Juan
 
 - [ ] Menu → implementar los campos de cada sección de items del menú -> Alejandro
          → implementar los campos de cada item del menu
@@ -25,7 +25,7 @@ Páginas:
 
 - [ ] PopUp de Cookies -> Daniel
 
-- [ ] Pagina de info legal →Términos y condiciones -> Juan
+- [x] Pagina de info legal →Términos y condiciones -> Juan
                          →Tratamiento de Datos
                          →Contacto legal
 
