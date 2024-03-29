@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
 *{
     padding: 0;
     margin: 0;
@@ -78,14 +80,16 @@ button h4
 #footer 
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: center;
     position: sticky;
     width: 100%;
     background-color: #30704E;
     color: white;
-    padding: 20px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 h1
@@ -94,29 +98,37 @@ h1
     margin-bottom: 20px;
 }
 
-.footer-info 
+#footer h1 {
+    margin-bottom: 30px;
+}
+
+#footer h3 {
+    font-size: 25px;
+}
+
+.footer-box
 {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     padding: 25px;
     border: none;
     border-radius: 8px;
+    margin-left: 50px; 
+    margin-right: 50px; 
+    min-width: 200px;
+    height: 100px;
 }
 
 .footer-links
 {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 25px;
-    border: none;
-    border-radius: 8px;
 }
 
-.footer-legal
-{
-    background-color: white;
-    padding: 25px;
-    border: none;
-    border-radius: 8px;
-}
+
 
 h3 
 {
