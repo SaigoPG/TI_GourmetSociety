@@ -1,0 +1,62 @@
+.compra{
+    display: flex;
+    justify-content: center;
+   
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.platos_box,.card_add_info {
+    width: 550px;
+    height: 700px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card_add_info{
+    margin-left: 1%;
+    
+   
+}
+.platos_box {
+    background-color: #d9d9d9;
+}
+
+
+.adiciones_box {
+    background-color: #d9d9d9;
+    height: 344px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    
+}
+
+.info_box {
+    background-color: #d9d9d9;
+    height: 344px;
+    align-content: center;
+}
+
+.info_box h2,select,input{
+    margin-left: 5%;
+
+}
+
+.info_box select,input{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.info_box button{
+    width: 20%;
+   margin-left: 40%;
+   margin-bottom: 20px;
+}
+
+
+
+
+
