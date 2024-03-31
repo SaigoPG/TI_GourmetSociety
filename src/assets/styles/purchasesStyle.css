@@ -1,7 +1,6 @@
 .compra{
     display: flex;
     justify-content: center;
-   
 }
 
 h2{
@@ -11,7 +10,8 @@ h2{
 }
 
 .platos_box,.card_add_info {
-    width: 30%;
+    display: flex;
+    flex-direction: column;
     height: 700px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -24,27 +24,26 @@ h2{
     background-color: #d9d9d9;
 }
 
-
 .adiciones_box {
+    display: flex;
+    flex-direction: column;
     background-color: #d9d9d9;
     height: 344px;
-    margin-top: -20px;
     margin-bottom: 10px;
     
 }
-.adiciones_box h2{
-    padding-top: 3%;
-}
 
 .info_box {
+    display: flex;
+    flex-direction: column;
     background-color: #d9d9d9;
     height: 344px;
-    align-content: center;
+    justify-content: center;
 }
 
 .info_box h2,select,input{
-    margin-left: 5%;
-
+    margin-left: 5%; 
+      
 }
 
 .info_box select,input{
@@ -68,18 +67,20 @@ h2{
 .food_Info_Img {
     display: flex;
     background-color: #d9d9d9;
-    width: 50%; 
+    width: 50%;
+    height: auto; 
     justify-content: center;
 }
 
 .food_Info_Img img {
     display: flex;
-    width: 85%;
+    width: 90%;
     padding: 3%; 
 }
 
 .food_Info_Txt{
     display: flex;
+    flex-direction: row;
     background-color: #d9d9d9;
     padding: 3%;
     width: 80%;
@@ -115,4 +116,87 @@ h5{
 
 .adiciones_box .food_Info{
     padding: 2% 4%;
+}
+
+@media screen and (min-width: 870px) and (max-width: 1200px){
+   
+    .platos_box,.card_add_info{
+        height: auto;
+        width: 90%;
+        margin-left: 1%;
+        margin-right: 1%;
+    } 
+    
+    .card_add_info{
+        align-self: center;
+        margin-bottom: 5%;
+    }
+
+    
+    .adiciones_box{
+        height: auto;
+        margin-bottom: 10px;
+    
+    }
+    .info_box{
+        height:max-content;
+    }
+    .food_Info{
+        height:auto;
+        align-items: center;
+    }
+    .food_Info_Img {
+        width: 70%;
+    }
+    .food_Info_Cantidad{
+        justify-content: center;
+    }
+     
+    .food_Info_Cantidad input{
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width: 870px){
+    .compra{
+        flex-direction: column;
+        
+    }
+    .platos_box,.card_add_info{
+        height: auto;
+        width: 90%;
+    } 
+    .platos_box{
+       
+        align-self: center;
+    }
+    .card_add_info{
+        margin: 0;
+       
+        align-self: center;
+        margin-bottom: 5%;
+    }
+    .platos_box h2, .adiciones_box h2{
+        margin: 0;
+        text-align: center;
+    }
+    
+    .adiciones_box{
+        height: auto;
+    }
+    .food_Info{
+        height:auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .food_Info_Img {
+        width: 70%;
+    }
+    .food_Info_Cantidad{
+        justify-content: center;
+    }
+     
+    .food_Info_Cantidad input{
+        width: 10px;
+    }
 }
