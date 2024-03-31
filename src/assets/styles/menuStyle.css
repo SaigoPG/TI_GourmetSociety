@@ -73,8 +73,7 @@
 
 
 
-
-
+/* Inicio de media queries */
 @media screen and (max-width: 1600px) {
 	#menu-plates{
         display: grid;
@@ -95,7 +94,7 @@
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	#menu-plates{
         display: grid;
         grid-template-columns: repeat(2,2fr);
@@ -110,7 +109,7 @@
     }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1000px) {
     #menu-plates{
         display: grid;
         grid-template-columns: repeat(1,2fr);

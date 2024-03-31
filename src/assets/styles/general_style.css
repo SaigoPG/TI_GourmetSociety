@@ -11,6 +11,12 @@ body{
     flex-direction: column;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
 #navbar
 {
     display: flex;
@@ -20,9 +26,6 @@ body{
     padding-bottom: 15px;
     background-color: #51BD83;
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 900;
     gap: 200px;
 }
 
@@ -43,8 +46,8 @@ margin-bottom: 0;
 
 #navLinks li 
 {
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #buttonContainer 
@@ -174,6 +177,58 @@ font-variation-settings:
 'opsz' 24
 }
 
+/* manejar display de los iconos del header en movil*/
+#menu-icon{
+    display: none;
+}
+#user-icon{
+    display: none;
+}
 
+/* Inicio de media queries */
+@media screen and (max-width: 1600px) {
+	#navbar{
+    gap: 100px;
+    }
 
+}
 
+@media screen and (max-width: 1250px) {
+	#navbar{
+    gap: 20px;
+    }
+
+    #footer  > div:last-child {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar{
+        justify-content: space-between;
+        }
+    #navbar h1 {
+            margin-bottom: 0;
+            margin-right: auto;
+        }
+    #navLinks{
+    display: none;
+    }
+    
+    #loginButton{
+    display: none;
+    }
+    #menu-icon{
+        display: inline;
+    }
+    #user-icon{
+        display: inline;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer  > div:last-child {
+        margin-right: 0;
+    }
+}
