@@ -48,3 +48,67 @@
 
 }
 
+@media screen and (max-width: 1600px) {
+
+    .regLog{
+
+        gap: 20px;
+
+    }
+    
+}
+
+@media screen and (max-width: 1250px) {
+    
+    .regLog{
+
+        gap: 15px;
+
+    }
+
+    .registerBox{
+
+        max-width: 60%;        
+
+    }
+
+    .imgContainer{
+
+        max-width: 60%;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .regLog{
+
+        flex-direction: column;
+        justify-content: stretch;
+        gap: 10px;
+
+    }
+
+    .registerBox{
+
+        height: fit-content;
+        width: 95%;    
+
+    }
+
+    #regForm{
+
+        line-height: 75%;
+
+    }
+
+    .imgContainer{        
+        
+        flex: 1;
+        width: 95%;
+
+    }
+    
+}
+
