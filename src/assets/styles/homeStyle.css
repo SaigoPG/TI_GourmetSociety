@@ -28,8 +28,18 @@
     height: 640px;
     width: 640px;
     background-color: grey;
-    align-self: center;
+    align-self: center;    
     
+}
+
+#bannerImg{
+
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+    
+
 }
 
 #section2{
