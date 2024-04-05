@@ -10,6 +10,9 @@
     gap: 25px;
 }
 
+.container h1{
+    font-size: 40px;
+}
 .box {
     display: flex;
     align-items: center;
@@ -17,7 +20,16 @@
     padding: 20px 40px;
     border: none;
     border-radius: 8px;
-    background-color: #51BD83;
+}
+
+.box img{
+    width: 180px;
+    height: 180px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.box h2{
+    margin-bottom: 20px;
 }
 
 .text {
