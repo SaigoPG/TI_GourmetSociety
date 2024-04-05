@@ -1,0 +1,105 @@
+.regLog {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-block: 42px;
+    height: 620px;
+    gap: 20px;
+
+}
+
+.registerBox {
+    display: flex;
+    border-radius: 5%;
+    background-color: #d9d9d9;
+    width: 20%;
+    padding: 2% 1%;
+    align-items: center;
+}
+
+.imgContainer {
+    border-radius: 5%;
+    background-color: #d9d9d9;
+    padding: 20px;
+    width: 20%;
+    height: 70%;
+    
+}
+
+.imgContainer img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+
+#regForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+#regForm input{
+    margin-bottom: 3%;
+}
+
+#regForm button{
+    width: 40%;
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 2% auto;
+}
+
+
+.swapLink{
+
+    align-self: center;
+
+}
+
+
+@media screen and (min-width: 870px) and (max-width: 1400px){
+    .registerBox{
+        width: 35%;
+    }
+    .imgContainer{
+        width: 30%;
+    }
+
+}
+@media only screen and (max-width: 870px){
+    .registerBox{
+        width: 70%;
+        height: 70%;
+        align-items: center;
+        align-self: center;    
+        justify-content: center;
+    }
+    .imgContainer{
+        display: none;
+    }
+    #regForm{
+        justify-content: center;
+        align-self: center;
+        width: 90%;
+        align-self: center;    
+    }
+
+    #regForm H2{
+        text-align: center;
+        margin: 0;
+    }
+    #regForm button{
+        margin: 2% auto;
+        width: 55%;
+    }
+}
+
+

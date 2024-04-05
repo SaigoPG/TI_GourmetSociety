@@ -1,0 +1,268 @@
+#firstBanner{
+
+    height: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+    margin-inline:15%;
+    margin-block:1%;
+
+}
+
+.bigTextContainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-wrap: wrap;
+    align-self: center;
+    gap: 20px;
+}
+
+.bigTextContainer h1{
+    font-size: 80px;
+}
+
+.bigTextContainer p{
+    font-size: 25px;
+}
+
+.bigTextContainer button{
+    padding: 20px;
+    width: 40%;
+    color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.dynImgContainer
+{
+
+    flex-grow: 1;
+    border-radius: 10%;
+    flex-basis: 50%;
+    height: 640px;
+    width: 640px;
+    background-color: grey;
+    align-self: center;    
+    
+}
+
+
+#bannerImg{
+
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+    
+
+}
+
+#section2{
+    margin-block: 15px;
+    padding-block: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section2 h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.cardShowcase
+{
+    margin-block: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    max-width: 1200px;
+}
+
+/* Estilos específicos para la imagen */
+.cardShowcase:nth-child(odd){
+    margin-bottom: 100px;
+}
+
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: stretch;
+    gap: 20px;
+    justify-content: space-between;
+    height: 550px;
+    background-color: #d9d9d9;
+    border-radius: 6px;
+}
+
+.cardCover
+{
+
+    width: 305px;
+    height: 336px;
+    object-fit: cover;
+
+}
+
+.cardText h4{
+    font-size: 25px;
+}
+
+/* Estilos para 3ra parte */
+.fullImage img
+{
+    width: 100%;
+    max-height: 900px;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.overlay 
+{
+    position: absolute;
+    top: 270%;
+    left: 60%;
+    color: white;
+    text-align:end;
+    padding: 20px;
+}
+
+.overlay h1 
+{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.overlay p 
+{
+    font-size: 1rem;
+    justify-content: flex-end;
+}
+/* FIN Estilos para 3ra parte */
+
+
+/* Estilos para 4ta parte - pagina principal*/
+.faq 
+{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+details 
+{
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #f9f9f9;
+}
+
+summary 
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+/* FIN Estilos para 4ta parte */
+
+@media screen and (max-width: 1600px) 
+{
+    #firstBanner 
+    {
+        height: auto; 
+    }
+
+    .dynImgContainer 
+    {
+        height: 500px; 
+        width: 500px; 
+    }
+
+    .overlay
+    {
+        left: 10%;
+    }
+
+    .cardShowcase
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) 
+{
+    #firstBanner 
+    {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .bigTextContainer 
+    {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .dynImgContainer 
+    {
+        flex-basis: 100%; 
+        height: auto; 
+        width: auto; 
+        margin-block: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #firstBanner 
+    {
+        flex-direction: column;
+        height: auto;
+        background-image: url('https://miro.medium.com/v2/resize:fit:826/1*knTujh2M6wxYL6ImZx1XmQ.jpeg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bigTextContainer 
+    {
+        z-index: 1;
+        flex-basis: 100%;
+    }
+    .dynImgContainer 
+    {
+        display: none;
+    }
+
+
+    .cardShowcase 
+    {
+        flex-direction: column; 
+        margin-block: 50px; 
+    }
+
+    .card 
+    {
+        width: 100%; 
+        margin-bottom: 30px; 
+    }
+
+    .cardCover 
+    {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .bigTextContainer h1{
+        color: white;
+    }
+    
+    .bigTextContainer p{
+        color: white;
+    }
+}

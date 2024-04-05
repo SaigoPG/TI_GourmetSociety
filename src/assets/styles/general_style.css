@@ -1,23 +1,235 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
+*{
     padding: 0;
     margin: 0;
-
 }
 
-#navbar {
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
+header{
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+#navbar
+{
     display: flex;
     justify-content: center;
-    padding: 4px;
-    padding-left: 188px;
-    padding-right: 188px;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #51BD83;
+    color: white;
+    gap: 200px;
+}
+
+
+#navbar h1 {
+margin-bottom: 0;
+}
+
+#navLinks 
+{
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 100px;
+}
+
+#navLinks li 
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#buttonContainer 
+{
+    display: flex;
+    gap: 10px;
+}
+
+button 
+{
+    background-color: #30704E;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+button h4 
+{
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+#loginButton a 
+{
+    color: white;
 
 }
 
-#navLinks {
-
+/* Estilos para el footer */
+#footer 
+{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    width: 100%;
+    background-color: #30704E;
+    color: white;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 60px;
+    margin-top: auto;
+}
 
+h1
+{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#footer h1 {
+    margin-bottom: 30px;
+}
+
+#footer h3 {
+    font-size: 25px;
+}
+
+.footer-box
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+    width: 220px;
+    height: 100px;
+}
+
+.footer-links
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    min-width: 200px;
+    height: 100px;
+}
+
+
+
+h3 
+{
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+
+li 
+{
+    margin-bottom: 5px;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+/* FIN Estilos para el footer */
+
+
+/* Modificar los estilos de los iconos de google Icons*/
+.material-symbols-outlined {
+font-size: 25px;
+color: black;
+margin-left: 10px;
+margin-right: 10px;
+font-variation-settings:
+'FILL' 1, 
+'wght' 400,
+'GRAD' 0,
+'opsz' 24
+}
+
+/* manejar display de los iconos del header en movil*/
+#menu-icon{
+    display: none;
+}
+#user-icon{
+    display: none;
+}
+
+/* Inicio de media queries */
+@media screen and (max-width: 1600px) {
+	#navbar{
+    gap: 100px;
+    }
+
+}
+
+@media screen and (max-width: 1250px) {
+	#navbar{
+    gap: 20px;
+    }
+
+    #footer  > div:last-child {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #navbar{
+        justify-content: space-between;
+        }
+    #navbar h1 {
+            margin-bottom: 0;
+            margin-right: auto;
+        }
+    #navLinks{
+    display: none;
+    }
+    
+    #loginButton{
+    display: none;
+    }
+    #menu-icon{
+        display: inline;
+    }
+    #user-icon{
+        display: inline;
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer  > div:last-child {
+        margin-right: 0;
+    }
 }
