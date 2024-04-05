@@ -1,6 +1,10 @@
 .compra{
     display: flex;
     justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto auto 0 auto;
+    gap: 20px;
 }
 
 h2{
@@ -18,10 +22,11 @@ h2{
 }
 
 .card_add_info{
-    margin-left: 1%;
+    width: 50%;
 }
 .platos_box {
     background-color: #d9d9d9;
+    width: 50%;
 }
 
 .adiciones_box {
@@ -39,22 +44,20 @@ h2{
     background-color: #d9d9d9;
     height: 344px;
     justify-content: center;
+    gap: 5px;
+    align-items: start;
 }
 
-.info_box h2,select,input{
-    margin-left: 5%; 
-      
-}
 
-.info_box select,input{
+
+.info_box select,input,button{
     width: 70%;
-    margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .info_box button{
     width: 20%;
-   margin-left: 40%;
-   margin-bottom: 20px;
+   margin-top: 30px;
 }
 
 .food_Info{
@@ -103,17 +106,21 @@ h2{
 .boton_Cantidad{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.boton_Cantidad button{
-    margin: 0 5px;
-    border-radius: 20px;
+.boton_Cantidad .material-symbols-outlined{
+    font-variation-settings:
+'FILL' 0 
 }
 h5{
     display: inline;
     padding-top: 4%;
 }
-
+.boton_Cantidad p{
+    text-align: center;
+    margin: 0 5px;
+}
 .adiciones_box .food_Info{
     padding: 2% 4%;
 }
@@ -134,7 +141,6 @@ h5{
     
     .card_add_info{
         align-self: center;
-        margin-bottom: 5%;
     }
 
     
@@ -143,9 +149,9 @@ h5{
         margin-bottom: 10px;
     
     }
-    .info_box{
+    /*.info_box{
         height:max-content;
-    }
+    }*/
     .food_Info{
         height:auto;
         align-items: center;
