@@ -11,14 +11,30 @@
 
 }
 
-.bigTextContainer
-{
-
+.bigTextContainer{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
     flex-basis: 50%;
     text-wrap: wrap;
     align-self: center;
+    gap: 20px;
+}
 
+.bigTextContainer h1{
+    font-size: 80px;
+}
+
+.bigTextContainer p{
+    font-size: 25px;
+}
+
+.bigTextContainer button{
+    padding: 20px;
+    width: 40%;
+    color: white;
+    border-radius: 10px;
+    margin-left: 30px;
 }
 
 .dynImgContainer
@@ -51,30 +67,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: grey;
+}
 
+#section2 h1{
+    font-size: 40px;
+    margin-top: 30px;
 }
 
 .cardShowcase
 {
-    
-    margin-block: 110px;
-    padding-block: 60px;
+    margin-block: 20px;
     display: flex;
     flex-direction: row;
     gap: 15px;
-
+    max-width: 1200px;
 }
+
+/* Estilos específicos para la imagen */
+.cardShowcase:nth-child(odd){
+    margin-bottom: 100px;
+}
+
 
 .card
 {
-
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 15px;
     align-items: stretch;
-    gap: 5px;
-
+    gap: 20px;
+    justify-content: space-between;
+    height: 550px;
+    background-color: #d9d9d9;
+    border-radius: 6px;
 }
 
 .cardCover
@@ -84,6 +109,10 @@
     height: 336px;
     object-fit: cover;
 
+}
+
+.cardText h4{
+    font-size: 25px;
 }
 
 /* Estilos para 3ra parte */
@@ -195,7 +224,7 @@ summary
     {
         flex-direction: column;
         height: auto;
-        background-image: url(''); 
+        background-image: url('https://miro.medium.com/v2/resize:fit:826/1*knTujh2M6wxYL6ImZx1XmQ.jpeg'); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -227,5 +256,13 @@ summary
     {
         width: 100%; 
         height: auto; 
+    }
+
+    .bigTextContainer h1{
+        color: white;
+    }
+    
+    .bigTextContainer p{
+        color: white;
     }
 }
