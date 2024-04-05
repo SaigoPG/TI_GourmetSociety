@@ -11,7 +11,8 @@
 
 }
 
-.bigTextContainer{
+.bigTextContainer
+{
 
     flex-grow: 1;
     flex-basis: 50%;
@@ -20,7 +21,8 @@
 
 }
 
-.dynImgContainer{
+.dynImgContainer
+{
 
     flex-grow: 1;
     border-radius: 10%;
@@ -31,6 +33,7 @@
     align-self: center;    
     
 }
+
 
 #bannerImg{
 
@@ -52,7 +55,8 @@
 
 }
 
-.cardShowcase{
+.cardShowcase
+{
     
     margin-block: 110px;
     padding-block: 60px;
@@ -62,7 +66,8 @@
 
 }
 
-.card{
+.card
+{
 
     display: flex;
     flex-direction: column;
@@ -72,7 +77,8 @@
 
 }
 
-.cardCover{
+.cardCover
+{
 
     width: 305px;
     height: 336px;
@@ -92,7 +98,7 @@
 .overlay 
 {
     position: absolute;
-    top: 240%;
+    top: 270%;
     left: 60%;
     color: white;
     text-align:end;
@@ -137,3 +143,89 @@ summary
     cursor: pointer;
 }
 /* FIN Estilos para 4ta parte */
+
+@media screen and (max-width: 1600px) 
+{
+    #firstBanner 
+    {
+        height: auto; 
+    }
+
+    .dynImgContainer 
+    {
+        height: 500px; 
+        width: 500px; 
+    }
+
+    .overlay
+    {
+        left: 10%;
+    }
+
+    .cardShowcase
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) 
+{
+    #firstBanner 
+    {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+    .bigTextContainer 
+    {
+        flex-basis: 100%;
+        padding: 10px;
+    }
+    .dynImgContainer 
+    {
+        flex-basis: 100%; 
+        height: auto; 
+        width: auto; 
+        margin-block: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    #firstBanner 
+    {
+        flex-direction: column;
+        height: auto;
+        background-image: url(''); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .bigTextContainer 
+    {
+        z-index: 1;
+        flex-basis: 100%;
+    }
+    .dynImgContainer 
+    {
+        display: none;
+    }
+
+
+    .cardShowcase 
+    {
+        flex-direction: column; 
+        margin-block: 50px; 
+    }
+
+    .card 
+    {
+        width: 100%; 
+        margin-bottom: 30px; 
+    }
+
+    .cardCover 
+    {
+        width: 100%; 
+        height: auto; 
+    }
+}

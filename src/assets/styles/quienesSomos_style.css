@@ -1,5 +1,4 @@
-.container 
-{
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,8 +10,7 @@
     gap: 25px;
 }
 
-.box 
-{
+.box {
     display: flex;
     align-items: center;
     width: 100%;
@@ -22,19 +20,58 @@
     background-color: #51BD83;
 }
 
-.text
-{
+.text {
     flex: 1;
     padding: 0 20px;
 }
 
-img
-{
+img {
     max-width: 100%;
 }
 
 /* Estilos específicos para la imagen */
-.box:nth-child(odd) 
+.box:nth-child(odd)
 {
     flex-direction: row-reverse;
 }
+
+/* Media queries */
+@media screen and (max-width: 1600px)
+{
+    .container 
+    {
+        max-width: 1200px; 
+    }
+
+    .box 
+    {
+        width: 48%; 
+    }
+    
+    .box:nth-child(odd)
+    {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .box 
+    {
+        flex-direction: column; 
+        width: 80%; 
+    }
+    img {
+        order: -1; 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .box {
+        flex-direction: column; 
+        width: 70%; 
+    }
+    img {
+        order: -1; 
+    }
+}
+
