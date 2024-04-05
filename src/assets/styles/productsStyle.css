@@ -1,0 +1,157 @@
+#product-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;   
+    margin-top: 40px;   
+}
+
+#product-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+#product-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 70%;
+}
+
+#product-text{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+#product-text h1{
+    font-size: 45px;
+}
+#product-text p{
+    line-height: 1.5;
+}
+
+#imagen-product-p{
+    width: 400px;
+    height: auto;
+    border-radius: 3px;
+}
+
+#product-nutricional{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#product-nutricional button{
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 100px 15px 100px;
+    color: white;
+}
+#product-nutricional h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+#product-macros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding: 50px;
+    gap: 80px;
+    border-radius: 3px;
+}
+
+.macro-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+.macro-info h3{
+    margin: 0;
+    font-weight:bold;
+}
+.macro-info p{
+    color: #666666;
+}
+
+#product-related{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#product-related h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+#product-suggestions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.suggestion-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #d9d9d9;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.suggestion-info h3{
+    font-size: 20px;
+}
+
+
+.imagen-sugg{
+    width: 200px;
+    height: auto;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1000px) {
+    #product-general{
+        flex-direction: column;
+    }
+    #product-suggestions{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #product-macros{
+        flex-direction: column;
+    }
+    #imagen-product-p{
+        width: 300px;
+        height: auto;
+        border-radius: 3px;
+    }
+}

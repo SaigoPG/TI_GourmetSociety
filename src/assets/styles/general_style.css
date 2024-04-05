@@ -73,9 +73,10 @@ button h4
     margin-left: 10px;
 }
 
-#loginButton 
+#loginButton a 
 {
     color: white;
+
 }
 
 /* Estilos para el footer */

@@ -1,6 +1,6 @@
 
 # Cosas por hacer
-
+# REVISAR RESPONSIVE, TAMANO IMAGENES, LINKS ENTRE PAGINAS, PEQUENAS ANIMACIONES, TAMANOS TITULOS, HACER DEPLOY
 HTML:
 
 General:
@@ -15,13 +15,13 @@ Páginas:
 
 - [x] Registro →Implementar el form y la imagen que lo acompaña  -> Juan
 
-- [ ] Menu → implementar los campos de cada sección de items del menú -> Alejandro
+- [x] Menu → implementar los campos de cada sección de items del menú -> Alejandro
          → implementar los campos de cada item del menu
- 
+    
 - [ ] Compras → implementar los platos en el carrito -> Julian 
             → implementar la form de método de pago
 
-- [ ] Productos Nutricional → implementar campos de imagen y descripción de cada item del menú -> Alejandro
+- [x] Productos Nutricional → implementar campos de imagen y descripción de cada item del menú -> Alejandro
 
 - [ ] PopUp de Cookies -> Daniel
 

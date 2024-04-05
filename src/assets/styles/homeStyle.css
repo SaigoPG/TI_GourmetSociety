@@ -30,20 +30,22 @@
     height: 640px;
     width: 640px;
     background-color: grey;
-    align-self: center;
+    align-self: center;    
     
 }
 
-#bannerGrande
-{
-    object-fit:fill;
+
+#bannerImg{
+
     width: inherit;
     height: inherit;
     border-radius: inherit;
+    object-fit: cover;
+    
+
 }
 
-#section2
-{
+#section2{
     margin-block: 15px;
     padding-block: 15px;
     display: flex;
