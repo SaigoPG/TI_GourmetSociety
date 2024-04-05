@@ -7,7 +7,7 @@
 }
 
 #menu-title h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -43,7 +43,7 @@
 
 .imagen-menu{
     width: 120px;
-    height: auto;
+    height: 85px;
 }
 
 #menu-plates{
@@ -66,7 +66,7 @@
 
 .imagen-plato{
     width: 300px;
-    height: auto;
+    height: 180px;
     border-radius: 3px;
 }
 
@@ -84,13 +84,14 @@
         grid-template-columns: 1fr 2fr;
     }
     
-
+    
     .plate{
         padding: 20px;
         background-color: #d9d9d9;
         border-radius: 10px;
         max-width: 300px;
     }
+
 
 }
 
@@ -107,6 +108,10 @@
     #menu-list{
         display: none;
     }
+    #menu-title h1{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
