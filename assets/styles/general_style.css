@@ -163,7 +163,13 @@ a:hover
     text-decoration: underline;
 }
 /* FIN Estilos para el footer */
-
+input{
+    margin-bottom: 3%;
+    background-color: #d9d9d9;
+    border-width: 1px;
+    border-radius: 3px;
+    height: 20px;
+}
 
 /* Modificar los estilos de los iconos de google Icons*/
 .material-symbols-outlined {

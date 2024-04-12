@@ -3,7 +3,7 @@
     justify-content: center;
     width: 90%;
     max-width: 1200px;
-    margin: auto auto 0 auto;
+    margin: 50px auto 50px auto;
     gap: 20px;
 }
 
@@ -55,9 +55,14 @@ h2{
     margin-left: 20px;
 }
 
+.info_box select{
+    background-color: #d9d9d9;
+    height: 30px;
+}
+
 .info_box button{
-    width: 20%;
-   margin-top: 30px;
+    width: 50%;
+    margin-top: 20px;
 }
 
 .food_Info{
@@ -126,12 +131,12 @@ h5{
 }
 
 .btn_pagar{
-   padding: 1% 0;
+    padding: 10px 20px 10px 20px;
     color: white;
+    
 }
 
-@media screen and (min-width: 870px) and (max-width: 1200px){
-   
+@media screen and (max-width: 1200px){
     .platos_box,.card_add_info{
         height: auto;
         width: 90%;
@@ -162,13 +167,12 @@ h5{
     .food_Info_Cantidad{
         justify-content: center;
     }
-     
     .food_Info_Cantidad input{
         width: 10px;
     }
 }
 
-@media only screen and (max-width: 870px){
+@media screen and (max-width: 870px){
     .compra{
         flex-direction: column;
         
@@ -183,12 +187,10 @@ h5{
     }
     .card_add_info{
         margin: 0;
-       
         align-self: center;
         margin-bottom: 5%;
     }
     .platos_box h2, .adiciones_box h2{
-        margin: 0;
         text-align: center;
     }
     
@@ -209,5 +211,8 @@ h5{
      
     .food_Info_Cantidad input{
         width: 10px;
+    }
+    .btn_pagar{
+        margin-bottom: 30px;  
     }
 }
