@@ -62,16 +62,19 @@
 }
 
 #section2{
-    margin-block: 15px;
+    margin-top: 25px;
+    margin-bottom: 80px;
     padding-block: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 60px;
 }
 
 #section2 h1{
     font-size: 40px;
-    margin-top: 30px;
+    
+    
 }
 
 .cardShowcase
@@ -80,7 +83,7 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 /* Estilos específicos para la imagen */
@@ -99,6 +102,7 @@
     justify-content: space-between;
     height: 550px;
     background-color: #d9d9d9;
+    max-width: 315px;
     border-radius: 6px;
 }
 
@@ -127,7 +131,7 @@
 .overlay 
 {
     position: absolute;
-    top: 270%;
+    top: 2650px;
     left: 60%;
     color: white;
     text-align:end;
@@ -188,12 +192,21 @@ summary
 
     .overlay
     {
-        left: 10%;
+        right: 10%;
+        top: 3900px;
     }
 
     .cardShowcase
     {
         flex-direction: column;
+    }
+
+    .cardCover{
+
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
     }
 }
 
@@ -216,6 +229,14 @@ summary
         width: auto; 
         margin-block: 20px;
     }
+
+    .overlay{
+
+        left: 30%;
+        top: 4200px;
+        width: 60%;
+
+    }
 }
 
 @media screen and (max-width: 1000px)
@@ -224,38 +245,70 @@ summary
     {
         flex-direction: column;
         height: auto;
-        background-image: url('https://miro.medium.com/v2/resize:fit:826/1*knTujh2M6wxYL6ImZx1XmQ.jpeg'); 
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://miro.medium.com/v2/resize:fit:826/1*knTujh2M6wxYL6ImZx1XmQ.jpeg'); 
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        
+        margin: 0;
+        padding: 15px;
     }
+
+    #firstBanner .genBtn{
+
+        align-self: center;
+        margin: 0;
+
+    }
+
     .bigTextContainer 
     {
         z-index: 1;
         flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .bigTextContainer h1{
+
+        font-size: 60px;
+
     }
     .dynImgContainer 
     {
         display: none;
     }
 
+    #section2{
+
+        gap: 5px;
+        margin-block: 15px;
+
+    }
+
+    #section2 h1{
+
+        text-align: center;
+        font-size: 35px;
+    }
 
     .cardShowcase 
     {
         flex-direction: column; 
+        align-items: center;
         margin-block: 50px; 
     }
 
     .card 
     {
-        width: 100%; 
+        width: 75%; 
         margin-bottom: 30px; 
     }
 
     .cardCover 
     {
         width: 100%; 
-        height: auto; 
+        height: auto;
+        overflow: hidden;
     }
 
     .bigTextContainer h1{
@@ -265,4 +318,22 @@ summary
     .bigTextContainer p{
         color: white;
     }
+
+    .overlay {
+
+        top: 3250px;
+        left: 20%;
+
+    }
+
+    .fullImage{
+
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    
+    
 }
