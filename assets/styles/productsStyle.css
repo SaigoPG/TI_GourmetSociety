@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: auto;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -114,6 +114,8 @@
     gap: 20px;
 }
 
+
+
 .suggestion-info{
     display: flex;
     justify-content: center;
@@ -127,7 +129,14 @@
 
 .suggestion-info h3{
     font-size: 20px;
+    cursor: pointer;
 }
+
+.suggestion-info h3:hover{
+    font-weight: bold;
+}
+
+
 
 
 .imagen-sugg{
