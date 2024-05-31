@@ -8,9 +8,16 @@
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/legalStyle.css">
         <script src = "JS/footer.js" defer> </script>
+        <script src="assets/scripts/logo.js" defer></script>
+        <script src="assets/scripts/borgir.js" defer></script>
+        <script src="assets/scripts/borgir.js" defer></script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
 
     </head>
 
@@ -18,7 +25,7 @@
         <header>
             <nav id="navbar">
                 <span class="material-symbols-outlined" id="menu-icon">table_rows</span>
-                <h1>GS</h1>
+                <h1 id="logo">GS</h1>
                 <ul id="navLinks"> 
                     <li ><a href="index.html">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
@@ -29,11 +36,20 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
             </nav>
-        </header>    
+
+            <ul id="navLinksMobile"> 
+                <li ><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="comoFunciona.html">¿Cómo funciona?</a></li>
+                <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+            </ul>
+
+        </header>  
         
         
         <div id="legalContainer">
@@ -112,5 +128,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

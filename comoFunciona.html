@@ -7,11 +7,20 @@
         <meta charset="utf-8">
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/comoFunciona_style.css">
         <script src = "JS/EaseOut_QS_CF.js" defer> </script>
         <script src = "JS/footer.js" defer> </script>
+
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+        <link rel="stylesheet" href="assets/styles/general_style.css">
+        <link rel="stylesheet" href="assets/styles/comoFunciona_style.css">
+        <script src="assets/scripts/logo.js" defer></script>
+        <script src="assets/scripts/borgir.js" defer></script>
+
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
 
     </head>
 
@@ -19,7 +28,7 @@
         <header>
             <nav id="navbar">
                 <span class="material-symbols-outlined" id="menu-icon">table_rows</span>
-                <h1>GS</h1>
+                <h1 id="logo">GS</h1>
                 <ul id="navLinks"> 
                     <li ><a href="index.html">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
@@ -30,10 +39,19 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
             </nav>
+
+            <ul id="navLinksMobile"> 
+                <li ><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="comoFunciona.html">¿Cómo funciona?</a></li>
+                <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+            </ul>
+
         </header>
 
         <section class="container">
@@ -41,7 +59,7 @@
             
             <div class="box">
                 
-                <img src="https://commercemarketplace.adobe.com/media/catalog/product/8/c/8c54_login-registration-page-logo_1.png" alt="Imagen 1">
+                <img id="imagen-1" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona1.png?alt=media&token=76ca8774-6b7f-4ed4-bd66-3f1ee8352edb" alt="Imagen 1">
 
                 <div class="text">
                     <h2>1. Registro y Creación de Cuenta</h2>
@@ -53,7 +71,7 @@
             <div class="box">
 
 
-                <img src="https://static.thenounproject.com/png/1092662-200.png" alt="Imagen 2">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona2.png?alt=media&token=a14eea9f-dc17-4cf6-81bd-d30cc831fa4a" alt="Imagen 2">
 
                 <div class="text">
                     <h2>2. Exploración del Menú</h2>
@@ -64,7 +82,7 @@
 
             <div class="box">
                 
-                <img src="https://cdn-icons-png.flaticon.com/512/2037/2037229.png" alt="Imagen 1">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona3.png?alt=media&token=e3e8d1f1-6ce5-40a7-aab8-3b8e34cd8f2c" alt="Imagen 1">
 
                 <div class="text">
                     <h2>3. Realizar un Pedido</h2>
@@ -75,7 +93,7 @@
 
             <div class="box">
 
-                <img src="https://cdn-icons-png.flaticon.com/512/3069/3069504.png" alt="Imagen 2">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona4.png?alt=media&token=2ffc22ee-33c5-4c31-bdc9-4bc1447ceae2" alt="Imagen 2">
 
                 <div class="text">
                     <h2>4. Opciones de Pago</h2>
@@ -86,7 +104,7 @@
 
             <div class="box">
                 
-                <img src="https://cdn-icons-png.flaticon.com/512/1439/1439004.png" alt="imagen 1">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona5.png?alt=media&token=e25034de-d43f-446b-8bd8-c15385083b5f" alt="imagen 1">
 
                 <div class="text">
                     <h2>5. Entrega y Recepción del Pedido</h2>
@@ -97,7 +115,7 @@
 
             <div class="box">
 
-                <img src="https://cdn-icons-png.flaticon.com/512/4090/4090439.png" alt="Imagen 2">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fcomofunciona6.png?alt=media&token=d832873c-6a3a-4609-8cf4-5c8eee649ecf" alt="Imagen 2">
 
                 <div class="text">
                     <h2>6. Servicio al Cliente y Soporte</h2>
@@ -151,5 +169,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

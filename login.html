@@ -2,16 +2,24 @@
 <html>
 
     <head>
-        
         <title>Gourmet Society</title>
         <meta charset="utf-8">
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/regLogStyle.css">
         <script src = "JS/Opcion1.js" defer> </script>
         <script src = "JS/footer.js" defer> </script>
+
+        <script src="assets/scripts/logo.js" defer></script>
+        <script src="assets/scripts/borgir.js" defer></script>
+        <script src="./assets/app/signinForm.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
+
 
     </head>
 
@@ -19,7 +27,7 @@
         <header>
             <nav id="navbar">
                 <span class="material-symbols-outlined" id="menu-icon">table_rows</span>
-                <h1>GS</h1>
+                <h1 id="logo">GS</h1>
                 <ul id="navLinks"> 
                     <li ><a href="index.html">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
@@ -30,10 +38,19 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
             </nav>
+
+            <ul id="navLinksMobile"> 
+                <li ><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="comoFunciona.html">¿Cómo funciona?</a></li>
+                <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+            </ul>
+
         </header>
 
         <div class="regLog">
@@ -41,8 +58,8 @@
             <div class="registerBox">
                 <form id="regForm">
                     <h2><strong>Iniciar Sesión</strong></h2><br>
-                    <h3>Nombre de usuario / Correo</h3>
-                    <input type="text" id="nUsuario" name="nUsuario" required>
+                    <h3>Correo</h3>
+                    <input type="email" id="nUsuario" name="nUsuario" required>
                     <h3>Contraseña</h3>
                     <input type="password" id="nPass" name="nPass" required>                 
                     <button type="submit">Iniciar Sesión</button>
@@ -52,7 +69,7 @@
             </div>
 
             <div class="imgContainer">
-                <img src="https://assets.lightspeedhq.com/img/2019/07/8aac85b2-blog_foodpresentationtipsfromtopchefs.jpg" alt="Imagen">  
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Flogin.jpg?alt=media&token=db2af4e0-84e3-4389-a0df-0224ed9bd2ff" alt="Imagen">  
             </div>
 
         </div>
@@ -100,5 +117,5 @@
         </footer>
 
     </body>
-
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

@@ -11,6 +11,13 @@
 
 }
 
+.genBtn:hover {
+
+    background-color: #304e3e;
+    color: white;
+
+}
+
 .bigTextContainer{
     display: flex;
     flex-direction: column;
@@ -39,25 +46,44 @@
 
 .dynImgContainer
 {
-
+    display: flex;
     flex-grow: 1;
     border-radius: 10%;
     flex-basis: 50%;
     height: 640px;
-    width: 640px;
-    background-color: grey;
-    align-self: center;    
+    width: 640px; 
+    align-self: center;
+    overflow: hidden;  
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    transition: .3s;
     
+}
+
+.dynImgContainer:hover{
+
+    rotate: 15deg;
+    transition: .3s;
+
 }
 
 
 #bannerImg{
-
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    object-fit: cover;
     
+   object-fit: cover;
+   height: 640px;
+
+   transition: .3s;
+
+}
+
+#bannerImg:hover{
+
+    rotate: -15deg;
+    transition: .3s;
+    height:800px;
 
 }
 
@@ -87,10 +113,15 @@
 }
 
 /* Estilos específicos para la imagen */
-.cardShowcase:nth-child(odd){
-    margin-bottom: 100px;
-}
 
+.cardIn {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+
+}
 
 .card
 {
@@ -104,6 +135,21 @@
     background-color: #d9d9d9;
     max-width: 315px;
     border-radius: 6px;
+    transition: .2s;
+}
+
+
+
+.card:nth-of-type(even){
+
+    margin-top: 50px;
+
+}
+
+.card:nth-of-type(odd){
+
+    margin-bottom: 50px;
+
 }
 
 .cardCover
@@ -117,6 +163,18 @@
 
 .cardText h4{
     font-size: 25px;
+}
+
+.card > a{
+
+    align-self: center;
+
+}
+
+.prev, .next{
+
+    display: none;
+
 }
 
 /* Estilos para 3ra parte */
@@ -189,6 +247,7 @@ summary
     font-weight: bold;
     cursor: pointer;
 }
+
 /* FIN Estilos para 4ta parte */
 
 @media screen and (max-width: 1600px) 
@@ -210,18 +269,13 @@ summary
         top: 3900px;
     }
 
-    .cardShowcase
-    {
-        flex-direction: column;
+    .card:hover{
+
+        transform: scale(1.2);
+        z-index: 2;
+    
     }
-
-    .cardCover{
-
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-
-    }
+   
 }
 
 @media screen and (max-width: 1250px) 
@@ -249,6 +303,33 @@ summary
         left: 30%;
         top: 4200px;
         width: 60%;
+
+    }
+
+    .cardIn{
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .cardCover{
+
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+
+    }
+
+    .card {
+
+        display: flex;
+
+    }
+
+    .prev, .next{
+
+        display: none;
 
     }
 }
@@ -305,17 +386,60 @@ summary
         font-size: 35px;
     }
 
-    .cardShowcase 
-    {
+    .cardShowcase {
         flex-direction: column; 
-        align-items: center;
-        margin-block: 50px; 
+        justify-content: center;
+        margin-block: 15px; 
     }
 
-    .card 
-    {
-        width: 75%; 
-        margin-bottom: 30px; 
+    .card:nth-of-type(even){
+
+        margin-top: 0px;
+    
+    }
+    
+    .card:nth-of-type(odd){
+    
+        margin-bottom: 0px;
+    
+    }
+    .prev, .next{
+
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        text-decoration: none;
+        background: rgba(0, 0, 0, .05);
+        border-radius: .25rem;
+        padding: .5rem;
+    }
+
+    .prev {
+
+        left: 10px;
+        text-decoration: none;
+
+    }
+
+    .next {
+
+        right: 10px;
+        text-decoration: none;
+
+    }
+
+    .toSlide {
+
+        animation-name: fade;
+        animation-duration: 1.5s;
+
+    }
+
+    @keyframes fade{
+
+        from {opacity: .4}
+        to {opacity: 1}
+
     }
 
     .cardCover 
