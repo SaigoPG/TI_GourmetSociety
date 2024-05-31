@@ -143,6 +143,7 @@ h1
     border-radius: 8px;
     width: 220px;
     height: 100px;
+    transition: transform 250ms ease-out, box-shadow 250ms ease-out;
 }
 
 .footer-links
