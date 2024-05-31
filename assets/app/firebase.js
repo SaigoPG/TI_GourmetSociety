@@ -90,6 +90,19 @@ export async function getPlateData(collectionName, plateIndex) {
   return data[plateIndex];
 }
 
+export async function getRecommendations() {
+  const recommendationsCollection = collection(db, 'recomendacion');
+  const recommendationSnapshot = await getDocs(recommendationsCollection);
+  let recommendations = [];
+
+  recommendationSnapshot.forEach(doc => {
+    recommendations.push({ id: doc.id, ...doc.data() });
+  });
+
+  return recommendations;
+}
+
+
 //auth
 export const saveUser = async (idUser,name) =>{
   await setDoc(doc(db, "users", idUser), {name});
