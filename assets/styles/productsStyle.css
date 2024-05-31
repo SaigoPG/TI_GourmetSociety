@@ -114,7 +114,10 @@
     gap: 20px;
 }
 
-
+#price{
+    font-weight: semi-bold;
+    font-size: 35px;
+}
 
 .suggestion-info{
     display: flex;

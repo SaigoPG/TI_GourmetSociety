@@ -28,6 +28,11 @@
     border-radius: 3px;
     margin-bottom: 30px;
 }
+
+.box #imagen-1 {
+    height: 160px;
+}
+
 .box h2{
     margin-bottom: 20px;
 }

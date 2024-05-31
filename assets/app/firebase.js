@@ -66,3 +66,24 @@ export async function getMenuData(collectionName) {
 
   return data;
 }
+
+
+export async function getPlateData(collectionName, plateIndex) {
+  const collectionRef = collection(db, "menu");
+  const collectionSnapshot = await getDocs(collectionRef);
+  let data = [];
+
+  for (let doc of collectionSnapshot.docs) {
+    const innerCollection = collection(doc.ref, collectionName);
+    const innerSnapshot = await getDocs(innerCollection);
+
+    for (let innerDoc of innerSnapshot.docs) {
+      data.push({
+        id: innerDoc.id,
+        ...innerDoc.data()
+      });
+    }
+  }
+
+  return data[plateIndex];
+}
