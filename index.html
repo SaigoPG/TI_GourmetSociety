@@ -8,12 +8,21 @@
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/homeStyle.css">
+
         <script src="assets/scripts/carr.js" defer></script>
         <script src="assets/scripts/changeOp.js" defer></script>
         <script src="assets/scripts/logo.js" defer></script>
         <script src="assets/scripts/borgir.js" defer></script>
+        <script src="./assets/app/main.js" type="module"> </script>
+        <script src="./assets/app/saludar.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
+        
+
 
     </head>
 
@@ -32,6 +41,7 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
@@ -57,7 +67,7 @@
             </div>
 
             <div class="dynImgContainer">
-                <img id="bannerImg" src="https://miro.medium.com/v2/resize:fit:826/1*knTujh2M6wxYL6ImZx1XmQ.jpeg" alt="banner1">    
+                <img id="bannerImg" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2FmainBanner.jpg?alt=media&token=516ef31b-4023-4806-8f61-9a19287246c6" alt="banner1">    
             </div>
             
 
@@ -145,7 +155,7 @@
 
         <div class="fullImage">
 
-            <img src="https://img.freepik.com/foto-gratis/chef-profesional-preparando-comida-cocina_23-2149728018.jpg" alt="Imagen de fondo">
+            <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2FmainBanner2.avif?alt=media&token=d453070a-9039-4f21-a625-1591d5eeac6c" alt="Imagen de fondo">
 
             <div class="overlay">
                 <h1>Ingredientes frescos de la más alta calidad.</h1>
@@ -243,5 +253,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

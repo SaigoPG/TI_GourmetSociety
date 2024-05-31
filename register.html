@@ -7,11 +7,18 @@
         <meta charset="utf-8">
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/regLogStyle.css">
+
         <script src="assets/scripts/logo.js" defer></script>
         <script src="assets/scripts/borgir.js" defer></script>
+        <script src="./assets/app/singup.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
+
 
     </head>
 
@@ -30,6 +37,7 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
@@ -55,10 +63,6 @@
                     <input type="email" id="nMail" name="nMail"required>
                     <h3>Contraseña</h3>
                     <input type="password" id="nPass" name="nPass"required>
-                    <h3>Confirma la Contraseña</h3>
-                    <input type="password" id="nPassConfirm" name="nPassConfirm"required>
-                    <h3>Dirección</h3>
-                    <input type="text" id="nAddress" name="nAddress"required>
                     <button type="submit">Registrarse</button>
                     <a class="swapLink" href="login.html">¿Ya tienes cuenta? ¡Inicia Sesión!</a>
 
@@ -68,7 +72,7 @@
 
             <div class="imgContainer">
 
-                <img src="https://i.shgcdn.com/44991769-a6f3-4695-995f-46536b14726e/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="Imagen">
+                <img src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/images%2Fregister.webp?alt=media&token=48a8bed2-1390-4a7f-876b-1caaac264958" alt="Imagen">
                 
             </div>
 
@@ -117,5 +121,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

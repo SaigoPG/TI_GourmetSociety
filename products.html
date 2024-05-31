@@ -8,10 +8,17 @@
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/productsStyle.css">
+
         <script src="assets/scripts/logo.js" defer></script>
         <script src="assets/scripts/borgir.js" defer></script>
+        <script src="./assets/app/products.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
+
 
     </head>
 
@@ -30,6 +37,7 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
@@ -43,13 +51,15 @@
             </ul>
 
         </header>
+        <div id="loading" style="display: none;" ><h1>Buscando los ingredientes de tu plato</h1></div>
         <section id="product-container">
             <div id="product-description">
                 <div id="product-general">
                     <img id="imagen-product-p" src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png" alt="Imagen">
                     <div id="product-text">
                         <h1>Nombre del Producto</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur. Quisque vitae lorem sollicitudin dui massa pharetra. Lacinia tellus pellentesque vitae feugiat habitasse cras odio.</p>
+                        <p id="product-content" >Lorem ipsum dolor sit amet consectetur. Quisque vitae lorem sollicitudin dui massa pharetra. Lacinia tellus pellentesque vitae feugiat habitasse cras odio.</p>
+                        <P id ="price">Precio</P>
                     </div>
                 </div>
                 <div id="product-nutricional">
@@ -97,7 +107,6 @@
                 </div>
             </div>
             
-            
             <div class="footer-box">
                 <h3>Información</h3>
                 <ul>
@@ -128,5 +137,6 @@
         </footer>
 
     </body>
-
+    <!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>
