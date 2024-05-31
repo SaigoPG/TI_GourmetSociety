@@ -3,7 +3,7 @@
     max-width: 1200px;
     margin: auto;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -114,7 +114,13 @@
     gap: 20px;
 }
 
+#price{
+    font-weight: semi-bold;
+    font-size: 35px;
+}
+
 .suggestion-info{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,17 +129,24 @@
     background-color: #d9d9d9;
     padding: 10px;
     border-radius: 3px;
+
 }
 
 .suggestion-info h3{
     font-size: 20px;
+    cursor: pointer;
 }
 
+.suggestion-info h3:hover{
+    font-weight: bold;
+}
 
 .imagen-sugg{
     width: 200px;
-    height: auto;
+    height: 150px;
+    overflow: hidden;
     border-radius: 3px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {

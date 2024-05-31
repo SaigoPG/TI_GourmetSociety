@@ -55,6 +55,32 @@
     align-self: center;
 }
 
+.registerBox, .loginBox {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.registerBox.show, .loginBox.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#regForm button, #loginForm button {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#regForm button:hover, #loginForm button:hover {
+    background-color: #30704E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#regForm input:focus, #loginForm input:focus {
+    border: 2px solid #30704E;
+    box-shadow: 0 0 5px rgba(48, 112, 78, 0.5);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
 @media screen and (max-width: 1200px){
     .registerBox{
         width: 25%;

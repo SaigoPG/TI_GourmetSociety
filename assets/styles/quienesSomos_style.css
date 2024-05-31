@@ -21,6 +21,7 @@
     border: none;
     border-radius: 8px;
     background-color: #51BD83;
+    transition: transform 250ms ease-out, box-shadow 250ms ease-out;
 }
 
 .box img{
