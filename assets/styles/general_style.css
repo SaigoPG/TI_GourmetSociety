@@ -112,10 +112,13 @@ button h4
     margin-left: 10px;
 }
 
-#loginButton a 
-{
+#loginButton a {
     color: white;
+}
 
+#logout{
+    color: white;
+    display: none;
 }
 
 /* Estilos para el footer */

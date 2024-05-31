@@ -1,5 +1,6 @@
 // Importando Firebase
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 // Importando firestore
 import { 
   query,
@@ -33,6 +34,7 @@ const firebaseConfig = {
   export const app = initializeApp(firebaseConfig);
   export const storage = getStorage();
   export const db = getFirestore();
+  export const auth = getAuth(app);
 
   
 
@@ -86,4 +88,9 @@ export async function getPlateData(collectionName, plateIndex) {
   }
 
   return data[plateIndex];
+}
+
+//auth
+export const saveUser = async (idUser,name) =>{
+  await setDoc(doc(db, "users", idUser), {name});
 }

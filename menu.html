@@ -8,10 +8,14 @@
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/menuStyle.css">
         <script src="./assets/app/menu.js" type="module"> </script>
         <script src="./assets/app/prueba.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
 
     </head>
 
@@ -30,6 +34,7 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
@@ -50,28 +55,44 @@
                     <li><img id="imagen-menu-bebidas" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuBebidas.jpg?alt=media&token=2426aa8a-fa99-4816-9a18-87abde40273a" alt="Imagen"><a href="#">Bebidas</a></li>
                 </ul>
             </nav>
-            <div id="menu-plates">
+            <div id="menu-plates">   
                 <div class="plate">
+                    <h1 class="menu-Responsive">Desayunos</h1>
                     <img id="imagen-plato-1" class="imagen-plato" src="" alt="Imagen">
                     <H3  id="nombre-plato-1" > <a> Hamburguesa </a></H3>
                 </div>
                 <div class="plate">
+                    <h1 class="menu-Responsive">Almuerzos</h1>
                     <img id="imagen-plato-2" class="imagen-plato" src="" alt="Imagen">
                     <H3 id="nombre-plato-2" >Desayuno de la Finca</H3>
                 </div>
                 <div class="plate">
+                    <h1 class="menu-Responsive">Cenas</h1>
                     <img id="imagen-plato-3" class="imagen-plato" src="" alt="Imagen">
                     <H3 id="nombre-plato-3" >Caldo de costilla</H3>
                 </div>
                 <div class="plate">
+                    <h1 class="menu-Responsive">Brunch</h1>
                     <img id="imagen-plato-4" class="imagen-plato" src="" alt="Imagen">
                     <H3 id="nombre-plato-4" >Huevos guisados acompañados de arepa</H3>
                 </div>
                 <div class="plate">
+                    <h1 class="menu-Responsive">Especiales</h1>
                     <img  id="imagen-plato-5" class="imagen-plato" src="" alt="Imagen">
                     <H3 id="nombre-plato-5" >Desayuno paisa premium</H3>
                 </div>
-                <div class="plate">
+                <div class="plate" >
+                    <h1 class="menu-Responsive">Postres</h1>
+                    <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
+                </div>
+                <div  class="menu-Responsive" class="plate">
+                    <h1 class="menu-Responsive">Acompanamientos</h1>
+                    <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
+                </div>
+                <div  class="menu-Responsive" class="plate">
+                    <h1 class="menu-Responsive">Bebidas</h1>
                     <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
                     <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
                 </div>
@@ -121,5 +142,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

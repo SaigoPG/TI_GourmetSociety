@@ -83,6 +83,9 @@
     border-radius: 3px;
 }
 
+.menu-Responsive{
+    display: none;
+}
 
 
 
@@ -96,13 +99,24 @@
         grid-template-columns: 1fr 2fr;
     }
     
-    
     .plate{
         padding: 20px;
         background-color: #d9d9d9;
         border-radius: 10px;
         max-width: 300px;
     }
+    .menu-Responsive{
+        display: block;
+    }
+    
+
+
+
+
+
+
+
+
 
 
 }

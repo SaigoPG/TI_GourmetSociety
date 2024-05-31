@@ -1,8 +1,25 @@
 import './acompanamiento.js';
 import { getPlateData } from './firebase.js';
+import { showMessage } from './mostrarMensaje.js'
 
 document.addEventListener('DOMContentLoaded', function() {
   renderCarrito(); // Llama a la función de renderizado al cargar la página
+  // Selecciona el botón con la clase 'btn_pagar'
+const pagarButton = document.querySelector('.btn_pagar');
+
+// Añade un evento de clic al botón
+pagarButton.addEventListener('click', () => {
+    // Obtiene el estado de autenticación del sessionStorage
+    const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+
+    // Verifica si el usuario está logeado
+    if (isLoggedIn === 'true') {
+        // El usuario está logeado, no hacer nada
+    } else {
+        // El usuario no está logeado, mostrar mensaje en la consola
+        showMessage('Para pedir hay que estar logeado');
+    }
+});
 });
 
 // Función para renderizar el carrito
@@ -163,4 +180,6 @@ export async function renderCarrito() {
   for (let i = 0; i < carrito.length; i++) {
     renderPlate(carrito[i], i);
   }
+
+
 }
