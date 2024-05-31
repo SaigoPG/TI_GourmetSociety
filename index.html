@@ -13,10 +13,16 @@
 
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/homeStyle.css">
+
+        <script src="assets/scripts/carr.js" defer></script>
+        <script src="assets/scripts/changeOp.js" defer></script>
+        <script src="assets/scripts/logo.js" defer></script>
+        <script src="assets/scripts/borgir.js" defer></script>
         <script src="./assets/app/main.js" type="module"> </script>
         <script src="./assets/app/saludar.js" type="module"> </script>
         <script src="./assets/app/loginCheck.js" type="module"> </script>
         
+
 
     </head>
 
@@ -24,7 +30,7 @@
         <header>
             <nav id="navbar">
                 <span class="material-symbols-outlined" id="menu-icon">table_rows</span>
-                <h1>GS</h1>
+                <h1 id="logo">GS</h1>
                 <ul id="navLinks"> 
                     <li ><a href="index.html">Inicio</a></li>
                     <li><a href="menu.html">Menú</a></li>
@@ -40,7 +46,16 @@
                 </div>
     
             </nav>
+
+            <ul id="navLinksMobile"> 
+                <li ><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="comoFunciona.html">¿Cómo funciona?</a></li>
+                <li><a href="quienesSomos.html">¿Quienes somos?</a></li>
+            </ul>
+
         </header>
+        
 
         <div id="firstBanner">
 
@@ -64,65 +79,77 @@
 
             <div class="cardShowcase">                
 
-                <div class="card" >
+                <a class="prev" onclick="changeIndex(-1)">&#10094;</a>
 
-                    <img class="cardCover" src="https://cdn7.kiwilimon.com/recetaimagen/53/2262.jpg" alt="Showcase item">
-                    <div class="cardText">
+                <div class="cardIn">
 
-                        <h4>Lomito de Tilapia</h4>
-                        <p>Dorado con acompañamiento de salsa de azafrán, ensalada de bok choi y pepino, y crocantes de batata.</p>
+                    <div class="card noSlide" onmouseover="changeOpacity(this)" onmouseout="restore(this)">
 
+                        <img class="cardCover" src="https://cdn7.kiwilimon.com/recetaimagen/53/2262.jpg" alt="Showcase item">
+                        <div class="cardText">
+    
+                            <h4>Lomito de Tilapia</h4>
+                            <p>Dorado con acompañamiento de salsa de azafrán, ensalada de bok choi y pepino, y crocantes de batata.</p>
+    
+                        </div>
+
+                        <a href="menu.html"><button class="genBtn">Pedir</button></a>
+                        
+    
                     </div>
-                    
-                    <button class="genBtn">Button</button>
-
-                </div>
-
-                <div class="card" >
-
-                    <img class="cardCover" src="https://static.trip101.com/main_pics/180260/medium_webp.webp" alt="Showcase item">
-                    <div class="cardText">
-
-                        <h4>Rollo de Lomo de cerdo</h4>
-                        <p>Jugoso rollo de lomo de cerdo, relleno de trocitos de tocino en salsa de queso edam, acompañado de un marinado de apio y vegetales. </p>
-
+    
+                    <div class="card noSlide" onmouseover="changeOpacity(this)" onmouseout="restore(this)">
+    
+                        <img class="cardCover" src="https://static.trip101.com/main_pics/180260/medium_webp.webp" alt="Showcase item">
+                        <div class="cardText">
+    
+                            <h4>Rollo de Lomo de cerdo</h4>
+                            <p>Jugoso rollo de lomo de cerdo, relleno de trocitos de tocino en salsa de queso edam, acompañado de un marinado de apio y vegetales. </p>
+    
+                        </div>
+                        
+                        <a href="menu.html"><button class="genBtn">Pedir</button></a>
+    
                     </div>
-                    
-                    <button class="genBtn">Button</button>
-
-                </div>
-
-                <div class="card" >
-
-                    <img class="cardCover" src="https://bclivespotprawns.com/cdn/shop/articles/cooked_spotprawn1_1944x.jpg?v=1665582075" alt="Showcase item">
-                    <div class="cardText">
-
-                        <h4>Langostinos au-vin-blanc</h4>
-                        <p>Langostinos frescos salteados en vino blanco y aceite de trufa, sazonados con condimento de la casa y sal marina.</p>
-
+    
+                    <div class="card noSlide" onmouseover="changeOpacity(this)" onmouseout="restore(this)">
+    
+                        <img class="cardCover" src="https://bclivespotprawns.com/cdn/shop/articles/cooked_spotprawn1_1944x.jpg?v=1665582075" alt="Showcase item">
+                        <div class="cardText">
+    
+                            <h4>Langostinos au-vin-blanc</h4>
+                            <p>Langostinos frescos salteados en vino blanco y aceite de trufa, sazonados con condimento de la casa y sal marina.</p>
+    
+                        </div>
+                        
+                        <a href="menu.html"><button class="genBtn">Pedir</button></a>
+    
                     </div>
-                    
-                    <button class="genBtn">Button</button>
+    
+                    <div class="card noSlide" onmouseover="changeOpacity(this)" onmouseout="restore(this)">
+    
+                        <img class="cardCover" src="https://img.freepik.com/free-photo/portioned-layered-cacao-cake-with-white-cream-chocolate-pieces_141793-1946.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701388800&semt=ais" alt="Showcase item">
+                        <div class="cardText">
+    
+                            <h4>Petit Gateau de Chocolate</h4>
+                            <p>Esponjoso pastelito de chocolate relleno de crema chantilly con una pizca de cáscara de naranja agria rallada y virutas de chocolate.</p>
+    
+                        </div>
+                        
+                        <a href="menu.html"><button class="genBtn">Pedir</button></a>
+    
+                    </div>  
 
-                </div>
+                </div>                         
+                
+                
+                <a class="next" onclick="changeIndex(1)">&#10095;</a>
 
-                <div class="card" >
-
-                    <img class="cardCover" src="https://img.freepik.com/free-photo/portioned-layered-cacao-cake-with-white-cream-chocolate-pieces_141793-1946.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1701388800&semt=ais" alt="Showcase item">
-                    <div class="cardText">
-
-                        <h4>Petit Gateau de Chocolate</h4>
-                        <p>Esponjoso pastelito de chocolate relleno de crema chantilly con una pizca de cáscara de naranja agria rallada y virutas de chocolate.</p>
-
-                    </div>
-                    
-                    <button class="genBtn">Button</button>
-
-                </div>                           
+                
 
             </div>
 
-            <button class="genBtn">Ver todos los platos</button>
+            <a href="menu.html"><button class="genBtn">Ver todos los platos</button></a>
 
         </div>
 
