@@ -8,8 +8,14 @@
         <meta name="keywords" content="comida, gourmet, cena, domicilios">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
         <link rel="stylesheet" href="assets/styles/general_style.css">
         <link rel="stylesheet" href="assets/styles/menuStyle.css">
+        <script src="./assets/app/menu.js" type="module"> </script>
+        <script src="./assets/app/prueba.js" type="module"> </script>
+        <script src="./assets/app/loginCheck.js" type="module"> </script>
 
     </head>
 
@@ -28,49 +34,67 @@
                 <div id="buttonContainer">
                     <span class="material-symbols-outlined" id="cart-icon"><a href="purchases.html">shopping_cart</a></span>
                     <button id="loginButton" ><a href="login.html">Iniciar Sesión</a></button>
+                    <button id="logout" ><a href="#">Cerrar Sesión</a></button>
                     <span class="material-symbols-outlined" id="user-icon">person</span>
                 </div>
     
             </nav>
         </header>
-        <div id="menu-title"><h1>Desayuno</h1></div>
+        <div id="menu-title"><h1>¿Que quieres comer hoy?</h1></div>
+        <div id="loading"><h1>¿Que quieres comer hoy?</h1></div>
         <section id="menu-container">
             <nav id="menu-list">
                 <ul>
-                    <li><img class="imagen-menu" src="https://www.fmfederal.com/wp-content/uploads/2023/07/Breakfast-board28.jpg" alt="Imagen"><a href="#">Desayuno</a></li>
-                    <li><img class="imagen-menu" src="https://lh4.googleusercontent.com/proxy/pomLIO9Mt7dmge7iJU-o8on8mADNs7WiRL233I_5-BFIitEuCG7XiFCBiMT502KNl1IVPZAbVG7RMqHeuuZGlYG8Z9A9tb2LF5rVFSjuL2rNgAFiTILpkv_M" alt="Imagen"><a href="#">Almuerzo</a></li>
-                    <li><img class="imagen-menu" src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png" alt="Imagen"><a href="#">Cena</a></li>
-                    <li><img class="imagen-menu" src="https://pinchofyum.com/wp-content/uploads/Breakfast-Sandwich-Recipe.jpg" alt="Imagen"><a href="#">Brunch</a></li>
-                    <li><img class="imagen-menu" src="https://d2dzi65yjecjnt.cloudfront.net/1362460-1.jpg" alt="Imagen"><a href="#">Especiales</a></li>
-                    <li><img class="imagen-menu" src="https://images3.alphacoders.com/210/210129.jpg" alt="Imagen"><a href="#">Postres</a></li>
-                    <li><img class="imagen-menu" src="https://hips.hearstapps.com/hmg-prod/images/guarnicion-de-verduras-1549987023.jpg" alt="Imagen"><a href="#">Acompañamiento</a></li>
-                    <li><img class="imagen-menu" src="https://images.squarespace-cdn.com/content/v1/52dac5fae4b0d691e03cebf9/1674769842632-1MSHDRP04ZIVSIVVYDKT/UntappedMedia_favthings-macro_UntappedMedia_Gehricke-beauty-Dec2020_3Z2A0827_b-roll.jpg?format=2500w" alt="Imagen"><a href="#">Bebidas</a></li>
+                    <li><img id="imagen-menu-desayuno" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuDesayuno.jpg?alt=media&token=5ca5346a-8fad-4f3b-9db9-5450f4a6ede2" alt="Imagen"><a href="#">Desayunos</a></li>
+                    <li><img id="imagen-menu-almuerzo" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuAlmuerzo.jpg?alt=media&token=418832a1-644c-4448-b3dc-5885c9adf654" alt="Imagen"><a href="#">Almuerzos</a></li>
+                    <li><img id="imagen-menu-Cena" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuCena.avif?alt=media&token=abee4d40-6c6e-465a-94b1-588a6fca54d6" alt="Imagen"><a href="#">Cenas</a></li>
+                    <li><img id="imagen-menu-brunch" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuBrunch.jpg?alt=media&token=ed0f769c-d2b3-4f88-9dfe-bed2129cfaae" alt="Imagen"><a href="#">Brunch</a></li>
+                    <li><img id="imagen-menu-especiales" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuEspeciales.jpg?alt=media&token=5a5cd1b5-45f5-48bb-b380-89e2382122b9" alt="Imagen"><a href="#">Especiales</a></li>
+                    <li><img id="imagen-menu-postres" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuPostres.jpg?alt=media&token=714fd702-4fc4-43d6-868a-03677941e01e" alt="Imagen"><a href="#">Postres</a></li>
+                    <li><img id="imagen-menu-acompanamiento" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuAcompanamientos.jpg?alt=media&token=5af4848e-b4f6-48cc-b404-672f0b9f8941" alt="Imagen"><a href="#">Acompanamientos</a></li>
+                    <li><img id="imagen-menu-bebidas" class="imagen-menu" src="https://firebasestorage.googleapis.com/v0/b/gourmet-society-12b9c.appspot.com/o/menuImages%2FmenuBebidas.jpg?alt=media&token=2426aa8a-fa99-4816-9a18-87abde40273a" alt="Imagen"><a href="#">Bebidas</a></li>
                 </ul>
             </nav>
-            <div id="menu-plates">
+            <div id="menu-plates">   
                 <div class="plate">
-                    <img class="imagen-plato" src="https://www.unileverfoodsolutions.com.co/dam/global-ufs/mcos/NOLA/calcmenu/recipes/col-recipies/fruco-tomate-cocineros/HAMBURGUESA%201200x709.png" alt="Imagen">
-                    <H3> <a href="products.html">Hamburguesa</a></H3>
+                    <h1 class="menu-Responsive">Desayunos</h1>
+                    <img id="imagen-plato-1" class="imagen-plato" src="" alt="Imagen">
+                    <H3  id="nombre-plato-1" > <a> Hamburguesa </a></H3>
                 </div>
                 <div class="plate">
-                    <img class="imagen-plato" src="https://vecinavegetariana.com/wp-content/uploads/2022/04/Aguapanela-Colombiana-3-1.jpeg" alt="Imagen">
-                    <H3>Desayuno de la Finca</H3>
+                    <h1 class="menu-Responsive">Almuerzos</h1>
+                    <img id="imagen-plato-2" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-2" >Desayuno de la Finca</H3>
                 </div>
                 <div class="plate">
-                    <img class="imagen-plato" src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/SEZQLLQHIBDVNM77ZGOINGUXEQ.jpg" alt="Imagen">
-                    <H3>Caldo de costilla</H3>
+                    <h1 class="menu-Responsive">Cenas</h1>
+                    <img id="imagen-plato-3" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-3" >Caldo de costilla</H3>
                 </div>
                 <div class="plate">
-                    <img class="imagen-plato" src="https://imagenes.eltiempo.com/files/image_704_431/uploads/2018/05/11/5af5b46041a93.jpeg" alt="Imagen">
-                    <H3>Huevos guisados acompañados de arepa</H3>
+                    <h1 class="menu-Responsive">Brunch</h1>
+                    <img id="imagen-plato-4" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-4" >Huevos guisados acompañados de arepa</H3>
                 </div>
                 <div class="plate">
-                    <img class="imagen-plato" src="https://imagenes.eltiempo.com/files/image_704_431/uploads/2018/05/11/5af5b40987a0b.jpeg" alt="Imagen">
-                    <H3>Desayuno paisa premium</H3>
+                    <h1 class="menu-Responsive">Especiales</h1>
+                    <img  id="imagen-plato-5" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-5" >Desayuno paisa premium</H3>
                 </div>
-                <div class="plate">
-                    <img class="imagen-plato" src="https://altonbrown.com/wp-content/uploads/2020/08/French-Toast-Stack_Lynne_resized.jpg" alt="Imagen">
-                    <H3>Tostada francesa con frutos rojos</H3>
+                <div class="plate" >
+                    <h1 class="menu-Responsive">Postres</h1>
+                    <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
+                </div>
+                <div  class="menu-Responsive" class="plate">
+                    <h1 class="menu-Responsive">Acompanamientos</h1>
+                    <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
+                </div>
+                <div  class="menu-Responsive" class="plate">
+                    <h1 class="menu-Responsive">Bebidas</h1>
+                    <img  id="imagen-plato-6" class="imagen-plato" src="" alt="Imagen">
+                    <H3 id="nombre-plato-6" >Tostada francesa con frutos rojos</H3>
                 </div>
             </div>
         </section>
@@ -118,5 +142,5 @@
         </footer>
 
     </body>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </html>

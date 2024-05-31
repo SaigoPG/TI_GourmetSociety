@@ -18,6 +18,22 @@ header{
     z-index: 900;
 }
 
+
+#loading {
+    position: fixed; /* Fijado en la pantalla */
+    top: 50%; /* Posición vertical al 50% */
+    left: 50%; /* Posición horizontal al 50% */
+    transform: translate(-50%, -50%); /* Trasladar para centrar */
+    text-align: center; /* Centrar el texto dentro del div */
+    z-index: 1000; /* Asegurar que está por encima de otros elementos */
+}
+
+
+#loading h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
 #navbar
 {
     display: flex;
@@ -96,10 +112,13 @@ button h4
     margin-left: 10px;
 }
 
-#loginButton a 
-{
+#loginButton a {
     color: white;
+}
 
+#logout{
+    color: white;
+    display: none;
 }
 
 /* Estilos para el footer */
